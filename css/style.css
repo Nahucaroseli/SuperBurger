@@ -198,6 +198,34 @@ html::-webkit-scrollbar-thumb{
     padding: 1rem 0;
     line-height: 2;
 }
+
+.scroll{
+    height: 300rem;
+}
+
+.scroll img{
+    opacity: 0;
+    position:fixed;
+    left:43%;
+    top: 20%;
+    width: 15%;
+}
+.scroll .scroll-text{
+    opacity: 0;
+    position: fixed;
+    top: 55%;
+    left: 34%;
+}
+
+.scroll .scroll-text h1{
+  font-size: 3rem;
+}
+.scroll .scroll-text span{
+    color:crimson;
+  }
+
+
+
 /* keyframes */
 @keyframes slide1 {
     0%{
