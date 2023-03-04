@@ -35,6 +35,27 @@ $(document).ready(function(){
 
 })
 
+//menu circular 
+const menu_slider = document.querySelector('.wrapper');
+let slides = document.querySelectorAll('.slides');
+let images = document.querySelectorAll('.slides img');
+let burger_descriptions = document.querySelectorAll('.burger_description')
+
+slides.forEach((slide,i)=>{
+    slide.onclick = () =>{
+        menu_slider.style.transform = `rotateZ(-${360 / 10 * (i+6)}deg)`;
+
+        images.forEach((img,i)=>{
+            img.style.setProperty('--img-no',5)
+            img.classList.remove("active")
+            burger_descriptions[i].classList.remove("is-active");
+        })
+        burger_descriptions[i].classList.add("is-active");
+        slide.querySelector("img").classList.add("active");
+
+    }
+})
+
 //user scroll
 
 

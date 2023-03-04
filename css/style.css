@@ -222,7 +222,137 @@ html::-webkit-scrollbar-thumb{
 }
 .scroll .scroll-text span{
     color:crimson;
-  }
+}
+.menu .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+
+.menu .box-container .box{
+    height: 37rem;
+    flex: 1 1 30rem;
+    background-color: rgb(24, 23, 23);
+    border: none;
+    box-shadow: var(--box-shadow);
+    border-radius: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+.menu .box-container .box:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+.menu .box-container .box img{
+    position: relative;
+    top: -10%;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.menu .box-container .box #img{
+    height: 80%;
+}
+.menu .box-container .box #img-2{
+    height: 90%;
+}
+.menu .box-container .box .content{
+    position: absolute;
+    top:55%;
+    text-align: center;
+    height: 70%;
+    width: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+.menu .box-container .box:hover .content{
+    cursor: pointer;
+}
+
+.menu .box-container .box .content h3{
+    font-size: 2.3rem;
+}
+.menu .box-container .box #price{
+    position: absolute;
+    font-size: 3.2rem;
+    top: 85%;
+    left: 39%;
+    color: crimson;
+}
+.menu .box-container .box .content p{
+    font-size: 1.5rem;
+    color: #f1f1f1;
+    padding: 1rem 0;
+}
+.menu-slider{
+    height: 50rem;
+    overflow: hidden;
+}
+.slides{
+    position: absolute;
+    width: 20vw;
+    transform: rotateZ(calc(360deg / 10 * var(--img-no))) translateY(calc(70rem/1.6));
+
+}
+.slides img{
+    width: 100%;
+    border-radius: 100%;
+    transform: rotateZ(calc(360deg / -10 * var(--img-no))) scale(var(--scale, .7));
+    object-fit: contain;
+}
+
+
+.slides img:hover{
+    --scale:1;
+    cursor: pointer;
+}
+
+.slides img.active{
+    --scale:1.5;
+}
+
+.wrapper{
+    position: relative;
+    top: 70%;
+    width: 120rem;
+    border-radius: 50%;
+    transform: rotateZ(-360deg);
+    transition: 1s ease;
+    z-index: 2;
+
+}
+
+.descriptions{
+    position: absolute;
+    left: 38%;
+    height: 50rem;
+    z-index: 1;
+}
+
+.descriptions .burger_description{
+    position: relative;
+    left: -3%;
+    top: 60%;
+    width: 50%;
+    opacity: 0;
+    text-align: center;
+    font-size: 2rem;
+    overflow: hidden;
+    height: 0%;
+    color: white;
+}
+.descriptions .burger_description p{
+    margin-top: 2rem;
+}
+.descriptions .burger_description.is-active{
+    opacity: 1;
+    height: 100%;
+}
 
 
 
