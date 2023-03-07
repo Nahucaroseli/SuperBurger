@@ -56,6 +56,32 @@ slides.forEach((slide,i)=>{
     }
 })
 
+// carousel promo
+
+let promo = document.getElementById("promoImg")
+
+let current = 0;
+
+let images_promo = ["images/Promo1.png","images/Promo2.png"];
+
+function changePromo(){
+    
+    current<=images_promo.length?current+=1:current=0
+    promo.style.transition = `${3}s ease`;
+    promo.src = images_promo[current];
+
+
+}
+
+
+setInterval(()=>{
+    changePromo();
+},3500);
+
+
+
+
+
 //user scroll
 
 

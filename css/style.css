@@ -354,6 +354,17 @@ html::-webkit-scrollbar-thumb{
     height: 100%;
 }
 
+.promos{
+    width: 100%;
+    height: 70rem;
+    text-align: center;
+}
+
+.promos img{
+    width: 65%;
+
+}
+
 
 
 /* keyframes */
