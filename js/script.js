@@ -80,6 +80,27 @@ setInterval(()=>{
 
 
 
+window.addEventListener("scroll",reveal);
+
+
+function reveal(){
+    let cards = document.querySelectorAll(".reveal");
+
+    for(let index = 0; index<cards.length;index++){
+        let windowHeight = window.innerHeight;
+        let revealTop = cards[index].getBoundingClientRect().top;
+        let revealPoint = 150;
+    
+        if(revealTop <windowHeight- revealPoint){
+            cards[index].classList.add("card-active");
+        }else{
+            cards[index].classList.remove("card-active");
+        }
+    }
+    
+}
+
+
 
 
 //user scroll
