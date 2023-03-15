@@ -178,6 +178,7 @@ html::-webkit-scrollbar-thumb{
 .home .content{
     text-align: center;
     max-width: 55rem;
+    margin-top: -80px;
 }
 
 .home .content h3{
@@ -206,19 +207,19 @@ html::-webkit-scrollbar-thumb{
 .scroll img{
     opacity: 0;
     position:fixed;
-    left:43%;
-    top: 20%;
-    width: 15%;
+    left:40%;
+    top: 25%;
+    width: 22%;
 }
 .scroll .scroll-text{
     opacity: 0;
     position: fixed;
-    top: 55%;
-    left: 34%;
+    top: 75%;
+    left: 32%;
 }
 
 .scroll .scroll-text h1{
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .scroll .scroll-text span{
     color:crimson;

@@ -106,6 +106,9 @@ function reveal(){
 //user scroll
 
 
+
+
+
 let scroll_section = document.querySelector(".scroll");
 let bread1 = document.querySelector("#burgerscroll");
 let meat = document.querySelector("#meat");
@@ -113,9 +116,16 @@ let scroll_text = document.querySelector("#scrollText");
 let cheddar = document.querySelector("#cheddar");
 let lettuce = document.querySelector("#lettuce");
 let bread2 = document.querySelector("#bread2");
-
+let anchors = document.querySelectorAll(".navbar a");
+anchors.forEach(a=>{
+    a.addEventListener("click",()=>{
+        scroll_section.style.opacity = 0;
+        setTimeout(()=>{
+            scroll_section.style.opacity = 1;
+        },2500);
+    })
+})
 window.addEventListener("scroll",()=>{
-    console.log(window.scrollY);
     if(window.scrollY <700){
         bread1.style.opacity = 0;
         meat.style.opacity = 0;
