@@ -153,7 +153,7 @@ html::-webkit-scrollbar-thumb{
 
 .home{
     background: url(../images/herobackground.jpg) no-repeat;
-    min-height: 100vh;
+    min-height: 102.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,6 +280,7 @@ html::-webkit-scrollbar-thumb{
     padding-top: 5rem;
 }
 
+
 .menu .box-container .box:hover .content{
     cursor: pointer;
 }
@@ -300,7 +301,7 @@ html::-webkit-scrollbar-thumb{
     padding: 1rem 0;
 }
 .menu-slider{
-    height: 50rem;
+    height: 53rem;
     overflow: hidden;
 }
 
@@ -312,9 +313,9 @@ html::-webkit-scrollbar-thumb{
 }
 .slides img{
     width: 100%;
-    border-radius: 100%;
+    margin-top: 150px;
     transform: rotateZ(calc(360deg / -10 * var(--img-no))) scale(var(--scale, .7));
-    object-fit: contain;
+    object-fit:contain;
 }
 
 
@@ -501,7 +502,9 @@ html::-webkit-scrollbar-thumb{
 @media (max-width: 991px){
     html{
         font-size: 55%;
+        
     }
+
 }
 
 @media (max-width: 768px){
@@ -528,6 +531,7 @@ html::-webkit-scrollbar-thumb{
     }
     .home{
         background-position: left;
+
     }
     .home .content h3{
         font-size: 5rem;
