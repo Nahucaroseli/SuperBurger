@@ -378,6 +378,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .combos .box-container{
+    margin-top: 15rem;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -410,7 +411,7 @@ html::-webkit-scrollbar-thumb{
     color:rgb(255, 255, 255);
 }
 .footer .box-container{
-    margin-top: 40rem;
+    margin-top: 25rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 1.5rem;
